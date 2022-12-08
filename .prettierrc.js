@@ -6,5 +6,10 @@ module.exports = {
   semi: true,
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
-  importOrder: ['^@screens/(.*)$', '^@components/(.*)$', '^[./]'],
+  importOrder: [
+    '^@utils/(.*)$',
+    '^@screens/(.*)$',
+    '^@components/(.*)$',
+    '^[./]',
+  ],
 };

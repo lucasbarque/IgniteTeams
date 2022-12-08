@@ -10,8 +10,8 @@ type Props = TouchableOpacityProps & {
 
 export function ButtonIcon({ icon, type = 'PRIMARY', ...rest }: Props) {
   return (
-    <Container {...rest}>
-      <Icon type={type} name={icon} />
+    <Container>
+      <Icon type={type} name={icon} {...rest} />
     </Container>
   );
 }
